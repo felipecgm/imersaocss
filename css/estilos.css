@@ -1,0 +1,74 @@
+/* reset css */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+body {
+  background-image: url('../img/landscape.jpg');
+  background-size: auto 100vh ;
+  font-family: Arial;
+  height: 100vh;
+  font-size: 18px;
+}
+
+/*Se a tela tiver pelo menos 400px vai carregar estes estilos*/
+/* breakpoints */
+@media (min-width: 400px) {
+  body {
+    font-size: 14px;
+  }
+}
+
+header {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+a {
+  color: whitesmoke;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+.menu {
+  position: fixed;
+  width: 100vw;
+  top: 0;
+}
+
+.menu ul {
+  display: flex;
+  justify-content: space-around;
+}
+
+.menu li {
+  list-style: none;
+}
+
+.menu a {
+  display: block;
+  padding: 10px 20px;
+}
+
+.site-subtitle,
+.site-title {
+  text-align: center;
+  color: whitesmoke;
+}
+
+.site-subtitle {
+  font-style: italic;
+}
+
+.img-portfolio {
+  height: 180px;
+  width: 180px;
+}
